@@ -1,0 +1,44 @@
+{
+    "name": "aliyun_share",
+    "version": "1.0.0",
+    "description": "阿里云分享加密解密",
+    "main": "main.js",
+    "author": "Wangchai",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^15.3.0",
+        "electron-builder": "^22.13.1"
+    },
+    "scripts": {
+        "start": "electron .",
+        "dist-mac-64": "electron-builder --mac --x64",
+        "dist-mac-arm": "electron-builder --mac --arm64",
+        "dist-win": "electron-builder --win --x64",
+        "dist-linux": "electron-builder --linux --x64"
+    },
+    "build": {
+        "appId": "com.xxx.app",
+        "mac": {
+          "target": [
+            "dmg",
+            "zip"
+          ],
+          "icon": "./static/icon.png"
+        },
+        "win": {
+          "target": [
+            "nsis",
+            "zip"
+          ],
+          "icon": "./static/icon.png"
+        },
+        "linux": {
+            "target": [
+              "AppImage",
+              "zip"
+            ],
+            "icon": "./static/icon.png"
+          }
+      }
+
+}

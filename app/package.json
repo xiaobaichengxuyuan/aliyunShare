@@ -1,0 +1,10 @@
+{
+    "name": "aliyunshare",
+    "version": "1.0.0",
+    "description": "阿里云分享编码解码",
+    "main": "main.js",
+    "private": true,
+    "dependencies": {                   
+        
+    } 
+}
