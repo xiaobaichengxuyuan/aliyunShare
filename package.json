@@ -1,44 +1,57 @@
 {
-    "name": "aliyun_share",
-    "version": "1.0.0",
-    "description": "阿里云分享加密解密",
-    "main": "main.js",
-    "author": "Wangchai",
-    "license": "MIT",
-    "devDependencies": {
-        "electron": "^15.3.0",
-        "electron-builder": "^22.13.1"
+  "name": "aliyun-share",
+  "version": "1.1.0",
+  "private": false,
+  "author":{
+    "name":"xiaobaichengxuyuan",
+    "email": "316628410@qq.com"
+  },
+  "license": "GPL-3.0",
+  "homepage":"https://github.com/xiaobaichengxuyuan/aliyunShare",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "element-plus": "^1.2.0-beta.6",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "electron": "^13.0.0",
+    "electron-devtools-installer": "^3.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "vue-cli-plugin-electron-builder": "~2.1.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
     },
-    "scripts": {
-        "start": "electron .",
-        "dist-mac-64": "electron-builder --mac --x64",
-        "dist-mac-arm": "electron-builder --mac --arm64",
-        "dist-win": "electron-builder --win --x64",
-        "dist-linux": "electron-builder --linux --x64"
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
     },
-    "build": {
-        "appId": "com.xxx.app",
-        "mac": {
-          "target": [
-            "dmg",
-            "zip"
-          ],
-          "icon": "./static/icon.png"
-        },
-        "win": {
-          "target": [
-            "nsis",
-            "zip"
-          ],
-          "icon": "./static/icon.png"
-        },
-        "linux": {
-            "target": [
-              "AppImage",
-              "zip"
-            ],
-            "icon": "./static/icon.png"
-          }
-      }
-
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }

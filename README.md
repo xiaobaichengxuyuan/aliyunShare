@@ -1,3 +1,24 @@
-# aliyunShare
- 阿里云分享加密解密编码解码
- 将文件编码为阿里云盘支持分享格式，下载后解码
+# aliyun-share
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
