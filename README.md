@@ -27,3 +27,4 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+![img](https://raw.githubusercontent.com/xiaobaichengxuyuan/aliyunShare/main/aliyunshare-explain.png)
